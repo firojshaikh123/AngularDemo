@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bookingsystem"
+    }
+  },
+  "defaultProject": "bookingsystem",
+  "cli": {
+    "analytics": false
+  }
 }
