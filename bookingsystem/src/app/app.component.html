@@ -125,10 +125,10 @@
 												<div class="col-lg-4 col-md-4 col-sm-12">
 													<div class="single-tab-select-box">
 
-														<h2>destination</h2>
+														<h2>destination123</h2>
 
 														<div class="travel-select-icon">
-															<select class="form-control ">
+															<select class="form-control" name="dest1" [(ngModel)]="Dest1">
 
 															  	<option value="default">enter your destination country</option><!-- /.option-->
 
@@ -141,13 +141,13 @@
 														</div><!-- /.travel-select-icon -->
 
 														<div class="travel-select-icon">
-															<select class="form-control ">
+															<select class="form-control" [(ngModel)]="roomCat" >
 
-															  	<option value="default">enter your destination location</option><!-- /.option-->
+															  	<option value="default">enter your room Type</option><!-- /.option-->
 
-															  	<option value="istambul">istambul</option><!-- /.option-->
+															  	<option value="single">single</option><!-- /.option-->
 
-															  	<option value="mosko">mosko</option><!-- /.option-->
+															  	<option value="Double">Double</option><!-- /.option-->
 															  	<option value="cairo">cairo</option><!-- /.option-->
 
 															</select><!-- /.select-->
@@ -242,7 +242,7 @@
 												</div><!--/.col-->
 												<div class="clo-sm-7">
 													<div class="about-btn travel-mrt-0 pull-right">
-														<button  class="about-view travel-btn">
+														<button  class="about-view travel-btn" (click)="Search()">
 															search	
 														</button><!--/.travel-btn-->
 													</div><!--/.about-btn-->
@@ -701,7 +701,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="dicount-offer-content text-center">
-							<h2>Join with us within 21 January, 2018 and get upto 40% Discount</h2>
+							<h2>Join with us within 21 Aug, 2020 and get upto 40% Discount</h2>
 							<div class="campaign-timer">
 								<div id="timer">
 									<div class="time time-after" id="days">
@@ -741,7 +741,7 @@
 						special packages
 					</h2>
 					<p>
-						Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.  
+						Grab this opportunity soon.
 					</p>
 				</div><!--/.gallery-header-->
 				<div class="packages-content">
@@ -1497,10 +1497,13 @@
 				</div><!--/.scroll-Top-->
 			</div><!-- /.container-->
 
+			<div style="border: 1px solid red; width:100%; height:200px;">	
+				<app-login [loc123]="Location" [typeOfRoom]="room_Type"></app-login>
+			</div>
 		</footer><!-- /.footer-copyright-->
 		<!-- footer-copyright end -->
-
-
+	
+		
 
 
 		
